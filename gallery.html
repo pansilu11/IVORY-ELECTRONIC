@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Ivory Electronic</title>
+    <link rel="stylesheet" href="css\style.css">
+    <style>
+        /* Extra styles specifically for the E-commerce Shop Cards */
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #e0dbcd;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #f4f1ea;
+        }
+
+        .product-details {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a252f;
+            margin-bottom: 8px;
+        }
+
+        .product-desc {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            height: 45px;
+            overflow: hidden;
+        }
+
+        .product-price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            display: block;
+            background-color: #25D366; /* WhatsApp Green */
+            color: white;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">IVORY <span>ELECTRONIC</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html" class="active">Shop / Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h1>Our Products</h1>
+        <p>Browse our authentic electronic items and order directly via WhatsApp for quick pickup or delivery!</p>
+        
+        <div class="shop-grid">
+            
+            <div class="product-card">
+                <img src="img\universal-tv-remote.jpg" alt="Universal TV Remote" class="product-img">
+                <div class="product-details">
+                    <div class="product-title">Universal TV Remote</div>
+                    <div class="product-desc">Compatible with all major smart TV brands. Durable and easy setup.</div>
+                    <div class="product-price">Rs. 1,500</div>
+                    <button class="buy-btn" onclick="orderProduct('Universal TV Remote', 'Rs. 1,500')">💬/call:0773504344</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="C:\Users\pansilu\Desktop\web\img\OIP.webp" alt="4K High-Speed HDMI Cable" class="product-img">
+                <div class="product-details">
+                    <div class="product-title">4K High-Speed HDMI Cable (2m)</div>
+                    <div class="product-desc">Gold-plated connectors for crystal clear video and sound transmission.</div>
+                    <div class="product-price">Rs. 1,200</div>
+                    <button class="buy-btn" onclick="orderProduct('4K HDMI Cable (2m)', 'Rs. 1,200')">💬/call:0773504344</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="C:\Users\pansilu\Desktop\web\img\OIP.jpeg" alt="Adjustable Soldering Iron Kit" class="product-img">
+                <div class="product-details">
+                    <div class="product-title">Soldering Iron Kit</div>
+                    <div class="product-desc">60W adjustable temperature welding iron with essential toolkit components.</div>
+                    <div class="product-price">Rs. 3,800</div>
+                    <button class="buy-btn" onclick="orderProduct('Soldering Iron Kit', 'Rs. 3,800')">💬/call:0773504344</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src= "C:\Users\pansilu\Desktop\web\img\8b2bcdb9-3128-43b5-9fbb-f9b63c17914f.png"alt="MORE ITEMS AVALIABLE IN OUR SHOP" class="product-img">
+                <div class="product-details">
+                    <div class="product-title"> ITEMS </div>
+                    <div class="product-desc">IF YOU WONT TO BYE GOOD AND TRUSTED ITEMS CALL FOR US.</div>
+                    <div class="product-price">less price</div>
+                    <button class="buy-btn" onclick="orderProduct('Soldering Iron Kit', 'Rs. 3,800')">💬/call:0773504344</button>
+
+                    
+                </div>
+            </div>
+            
+            
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ivory Electronic. All rights reserved.</p>
+    </footer>
+
+    <script src="js\script.js"></script>
+</body>
+</html>
